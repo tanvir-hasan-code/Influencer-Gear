@@ -109,7 +109,14 @@
     font-weight: 900;
     font-style: italic;
   }
-  
+  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* body part */
 *{
@@ -120,7 +127,7 @@
 body{
     max-width: 1280px ;
     margin: 50px auto;
-    /* background:linear-gradient(rgba(255, 255, 255,1),rgba(128, 128, 128, .5)); */
+    background:linear-gradient(rgba(255, 255, 255,1),rgba(138, 128, 18, .2));
 }
 /* navber section */
 .navigation{
@@ -185,6 +192,20 @@ body{
 .banner-img:hover{
     transform: scale(1.1);
 }
+.card:hover{
+    transform: translateY(-20px);
+}
+.card-option{
+    margin:50px 0 ;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: end;
+    color: tomato;
+    transition: transform .2s ease;
+}
 
 /* btn style */
 .banner-btn{
@@ -217,22 +238,59 @@ body{
     gap: 65px;
     justify-content: space-between;
 }
-.sponsor img{
-    transition: transform 0.3s ease;
-}
-.sponsor img:hover{
-    transform: scale(1.2);
-}
 
 /* card style */
+
+.collection-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin:100px 0px;
+    text-align: center;
+
+}
 .cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 35px;
 }
 .card{
-    
+    padding: 17px 15px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 0 40px 0 rgba(25, 24, 23, 1);
+    transition: transform 0.3s ease;
 }
+.product-name{
+    color: rgba(24, 25, 31, 1);
+    font-size: 2rem;
+    margin-top:16px ;
+    margin-bottom: 6px;
+}
+.price{
+    font-size: 1.7rem;
+}
+
+
+.rating{
+    color: rgba(251, 130, 0, 1);
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+.Status{
+    font-size: 0.9rem;
+    color: rgba(120, 120, 133, 1);
+    font-weight: 700;
+}
+.card-option:hover{
+    transform: scalex(1.1);
+}
+.more-option-card{
+    text-decoration: none;
+}
+
 
 
 
@@ -272,5 +330,20 @@ body{
     }
     .banner-btn{
         margin: 0 auto;
+    }
+    .sponsor{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 50px 50px;
+    }
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+        margin: 5%;
+    }
+    .card-option{
+        justify-content: center;
+    }
+    .card{
+        text-align: center;
     }
 }
