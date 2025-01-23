@@ -171,7 +171,8 @@ body{
 }
 .banner-img{
     background-image: url("../images/Circle\ design.svg");
-    width: 36%;
+    width: 38%;
+    padding: 20px;
     background-size:cover;
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
@@ -179,9 +180,6 @@ body{
 .banner-img:hover{
     transform: scale(1.1);
 }
-
-
-
 
 /* btn style */
 .banner-btn{
@@ -212,6 +210,7 @@ body{
 @media screen and (max-width:576px) {
     .navigation{
         padding: 0 20px;
+        margin-top: 0px;
     }
     .navigation ul{
         display: none;
@@ -227,14 +226,22 @@ body{
     .banner{
         flex-direction: column-reverse;
         margin-top: 30px;
-        gap: 25px;
         padding: 0;
+        gap: 0px;
     }
     .banner-img{
-        width: 50%;
+        width: 95%;
+        padding: 0px 0px;
+        /* margin-bottom: 50px; */
     }
-    .banner-title,.banner-details, .banner-btn{
-        margin: 20px auto;
+    .banner-txt{
+        margin: 5%;
+    }
+    .banner-title,.banner-details{
+        margin-bottom:20px;
         text-align: center;
+    }
+    .banner-btn{
+        margin: 0 auto;
     }
 }
