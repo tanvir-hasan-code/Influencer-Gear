@@ -1,0 +1,240 @@
+/* font style section */
+/* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+/* body part */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1280px ;
+    margin: 50px auto;
+    /* background:linear-gradient(rgba(255, 255, 255,1),rgba(128, 128, 128, .5)); */
+}
+/* navber section */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-cart-icon,.cheatsheet-icon{
+    display: none;
+    list-style: none;
+    font-size:1rem;
+    color: rgba(58, 58, 58, 1);
+}
+.navigation ul{
+    display: flex;
+    gap: 36px;
+}
+.navigation ul a{
+    text-decoration: none;
+}
+.navigation ul li{
+    list-style: none;
+    font-size: 1rem;
+    color: rgba(58, 58, 58, 1);
+}
+.company-title{
+    font-size: 1.6rem;
+    color: rgba(58, 58, 58, 1);
+}
+
+/* banner part style */
+.banner{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    gap: 150px;
+}
+.banner-title{
+    font-size: 3.5rem;
+    color: rgba(58, 58, 58, 1);
+    line-height: 70px;
+    margin-bottom: 17px;
+}
+.banner-details{
+    font-size: 1rem;
+    color: rgba(58, 58, 58, .9);
+    margin-bottom: 17px;
+}
+.banner-img{
+    background-image: url("../images/Circle\ design.svg");
+    width: 36%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+.banner-img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+/* btn style */
+.banner-btn{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(224, 44, 109, 1);
+    border: none;
+    border-radius: 42px;
+    padding: 10px 24px 10px 24px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+#right-arrow{
+    margin-top: 3px;
+}
+.banner-btn:hover{
+    box-shadow: 5px 3px 20px 5px rgba(58, 58, 58, .1);
+    transform: translateY(-10px);
+
+}
+
+
+
+@media screen and (max-width:576px) {
+    .navigation{
+        padding: 0 20px;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .company-title{
+        font-size: 1rem;
+    }
+    .add-cart-icon,.cheatsheet-icon{
+        display: inline-block;
+        font-size: 1rem;
+    }
+    /* banner part */
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        gap: 25px;
+        padding: 0;
+    }
+    .banner-img{
+        width: 50%;
+    }
+    .banner-title,.banner-details, .banner-btn{
+        margin: 20px auto;
+        text-align: center;
+    }
+}
