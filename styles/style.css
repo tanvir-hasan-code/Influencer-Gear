@@ -145,6 +145,7 @@ body{
     list-style: none;
     font-size: 1rem;
     color: rgba(58, 58, 58, 1);
+    transition: transform 0.3s ease;
 }
 .company-title{
     font-size: 1.6rem;
@@ -177,6 +178,10 @@ body{
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
 }
+/* hover effect */
+.navigation ul li:hover{
+    transform: scale(1.2);
+}
 .banner-img:hover{
     transform: scale(1.1);
 }
@@ -203,6 +208,20 @@ body{
     box-shadow: 5px 3px 20px 5px rgba(58, 58, 58, .1);
     transform: translateY(-10px);
 
+}
+/* sponsor section style */
+.sponsor{
+    display: flex;
+    max-width: 1175px;
+    margin:150px auto;
+    gap: 65px;
+    justify-content: space-between;
+}
+.sponsor img{
+    transition: transform 0.3s ease;
+}
+.sponsor img:hover{
+    transform: scale(1.2);
 }
 
 
