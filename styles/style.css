@@ -224,6 +224,16 @@ body{
     transform: scale(1.2);
 }
 
+/* card style */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+}
+.card{
+    
+}
+
 
 
 @media screen and (max-width:576px) {
