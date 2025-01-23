@@ -172,8 +172,8 @@ body{
 .banner-img{
     background-image: url("../images/Circle\ design.svg");
     width: 36%;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
     transition: transform 0.3s ease;
 }
 .banner-img:hover{
