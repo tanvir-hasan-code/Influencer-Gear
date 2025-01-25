@@ -491,6 +491,9 @@ footer{
         display: flex;
         margin: 20px auto;
     }
+    .featured-product>img{
+        width: 50%;
+    }
     /* footer section */
     .footer{
         padding: 0;
